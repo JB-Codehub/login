@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && cp -R dist/login/ ../",
+    "build": "ng build && cp -R dist/login/ ../ && cp -R README.md ../",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "push":"cd .. && git add . && git commit -m 'build Uploaded' && git push origin main"
   },
   "private": true,
   "dependencies": {
