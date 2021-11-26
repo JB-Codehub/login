@@ -4,11 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && cp -R dist/login/ ../ && cp -R README.md ../",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "cpy": "cp -R dist/login/ ../ && cp -R README.md ../",
-    "push": "git add . && git commit -m 'build Uploaded on \"$(date)\"' && git push origin main"
+    "push":"git add . && git commit -m \"Updated build\" && git push origin master"
   },
   "private": true,
   "dependencies": {
